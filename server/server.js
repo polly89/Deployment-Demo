@@ -7,6 +7,7 @@ app.use(cors());
 app.use(express.json()); 
 // Middleware
 app.use(express.static(path.join(__dirname, "../public")));
+app.use(express.static(path.join(__dirname, "../public/index.css")));
 
 // // End points (Choose this or Middleware)
 // app.get("/", function(req, res){

@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json()); 
 // Middleware
 app.use(express.static(path.join(__dirname, "../public")));
-app.use(express.static(path.join(__dirname, "../public/index.css")));
+// app.use("/styles", express.static(path.join(__dirname, "../public/index.css"))); <-- optional, or you can rename the html href
 
 // // End points (Choose this or Middleware)
 // app.get("/", function(req, res){

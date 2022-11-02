@@ -21,8 +21,8 @@ app.use(express.static(path.join(__dirname, "../public")));
 //     res.sendFile(path.join(__dirname, "../public/index.css"));
 // })
 
-// const port = process.env.PORT || 4005; //variable to store the port -- supplied by deployment service, for ex: Heroku. 4005 allows you to run the code locally prior to deployment. 
+const port = process.env.PORT || 4005; //variable to store the port -- supplied by deployment service, for ex: Heroku. 4005 allows you to run the code locally prior to deployment. 
 
-// app.listen(port, ()=> {
-//     console.log(`We vibin on port ${port}`);
-// });
+app.listen(port, ()=> {
+    console.log(`We vibin on port ${port}`);
+});
